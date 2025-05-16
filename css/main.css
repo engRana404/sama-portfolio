@@ -529,6 +529,13 @@ h5 {
 
 .footer-copyright {
   font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .response {
