@@ -9,30 +9,28 @@ const form = () => {
     responseMessage.classList.add("open");
     responseMessage.textContent = "Please wait...";
 
-    async function getData() {
-      try {
-        const response = await fetch("mail.php", {
-          method: "POST",
-          body: formData,
-        });
-        if (!response.ok) {
-          responseMessage.textContent = result;
-        }
+    try {
+      const response = await fetch("https://formspree.io/f/mnndwpyj", { // Replace with your Formspree endpoint
+        method: "POST",
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
 
-        const result = await response.text();
-        responseMessage.textContent = result;
-      } catch (error) {
-        console.error(error.message);
+      if (response.ok) {
+        responseMessage.textContent = "Thank you for your message!";
+        form.reset();
+      } else {
+        responseMessage.textContent = "Oops! There was a problem.";
       }
+    } catch (error) {
+      responseMessage.textContent = "Oops! There was a problem.";
+      console.error(error.message);
     }
 
-    getData()
-      .then(
-        setTimeout(() => {
-          responseMessage.classList.remove("open");
-        }, 3000)
-      )
-      .finally(form.reset());
+    setTimeout(() => {
+      responseMessage.classList.remove("open");
+      responseMessage.textContent = "";
+    }, 3000);
   });
 };
 export default form;
