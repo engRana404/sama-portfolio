@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary-bg-color: #f7fbfd;
+  --primary-bg-color: #f2ebf4;
   --primary-accent: #0c1618;
-  --secondary-accent: #6f1d1b;
+  --secondary-accent: #A47DAB;
 
   --main-text-color: #0c1618;
   --supportive-text-color: #242d2f;
@@ -203,13 +203,15 @@ h5 {
 .hero-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; /* Add this line */
 }
 
 .hero-content {
-  text-align: left;
-  align-self: center;
+  flex: 1 1 350px;
+  max-width: 600px;
+  min-width: 260px;
   padding: 20px;
-  flex-grow: 1;
 }
 
 .hero-greeting {
@@ -233,15 +235,20 @@ h5 {
 }
 
 .hero-img {
-  display: flex;
   flex: 1 1 356px;
-  justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end; /* Change from 'right' to 'flex-end' */
+  min-width: 260px;
+  max-width: 600px;
   margin-top: auto;
 }
 
 .hero-img img {
   display: block;
   position: relative;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .about-social-list {
@@ -320,6 +327,7 @@ h5 {
 
 .service-card {
   max-width: 300px;
+  text-align: center; /* Add this line */
 }
 
 .service-card-img {
@@ -604,13 +612,19 @@ h5 {
 
 .footer-copyright {
   font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
 .footer-copyright a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+.footer,
+.footer-copyright,
+.footer-copyright a {
+  color: #fff !important;
 }
 
 .response {
