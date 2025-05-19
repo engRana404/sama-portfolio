@@ -323,11 +323,15 @@ h5 {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
+  align-items: stretch; /* Add this line */
 }
 
 .service-card {
   max-width: 300px;
-  text-align: center; /* Add this line */
+  min-height: 420px; /* Adjust this value as needed for your content */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card-img {
@@ -351,6 +355,19 @@ h5 {
   font-size: 16px;
   line-height: 1.7;
   text-align: center;
+}
+
+.service-card-row {
+  display: flex;
+  align-items: center;
+  margin-top: auto; /* Pushes the button row to the bottom */
+  justify-content: center;
+}
+
+.service-card-row .btn {
+  margin-left: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Works */
