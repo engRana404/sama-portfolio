@@ -1,478 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sama Gamal</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-
-  <body>
-    <header id="header" class="header">
-      <div class="container container-lg">
-        <div class="header-nav">
-          <a
-            href="#home"
-            class="logo"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            >Sama Gamal</a
-          >
-          <nav id="nav" class="nav">
-            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
-              <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Videos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#scripts" class="nav-link">Scripts</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-            <button id="nav-btn" class="nav-btn">
-              <img
-                id="nav-btn-img"
-                src="img/icons/open.svg"
-                alt="Navigation button"
-              />
-            </button>
-          </nav>
-        </div>
-      </div>
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="Sama Gamal is a Digital Marketing & Growth Specialist working across performance marketing, influencer campaigns, content strategy and creative storytelling.">
+  <meta property="og:title" content="Sama Gamal — Digital Marketing & Growth">
+  <meta property="og:description" content="Turning creative ideas into measurable growth.">
+  <meta property="og:type" content="website">
+  <title>Sama Gamal — Digital Marketing & Growth</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#home" aria-label="Sama Gamal home">SG<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <a class="nav-cv" href="Sama%20Gamal%20Mohamed-Resume.pdf" target="_blank" rel="noopener">View CV <span>↗</span></a>
+      </nav>
     </header>
 
-    <section id="home" class="hero">
-      <div class="container container-lg">
-        <div
-          class="hero-row"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-        >
-          <div class="hero-content">
-            <span class="hero-greeting"> Hello, I am</span>
-            <h1 class="hero-heading">Sama Gamal</h1>
-            <span class="hero-heading-subtitle">
-              Digital Marketing Specialist | Skilled in Content Creation, 
-              Social Media Strategy & Creative Campaigns
-            </span>
-            <div class="about-social-list">
-              <div class="social-links-row">
-                <a href="https://www.linkedin.com/in/sama-gamal-a5a132203/">
-                  <img
-                    src="img/social_icons/linkedin.svg"
-                    alt="Link to linkedin profile"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <a href="#projects" class="btn">My Portfolio</a>
-              <a href="#contact" class="btn btn-white">Contact Me</a>
-            </div>
-          </div>
-          <div class="hero-img">
-            <img
-              src="img/hero/hero.png"
-              alt="Picture of Sama Gamal"
-            />
-          </div>
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <h1>Creative thinking.<br><span class="accent-word">Measurable</span> impact<span class="period">.</span></h1>
+          <p class="hero-intro">I turn audience insights into campaigns, content and experiences that move brands forward.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="#contact">Let's talk <span>↗</span></a></div>
         </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-title">
-          <h2 class="title">About Me</h2>
+        <div class="hero-art" aria-label="Abstract colorful creative composition">
+          <div class="art-grid"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div><div class="art-sticker sticker-top">IDEAS<br>IN MOTION</div><div class="art-sticker sticker-bottom">STRATEGY<br>× CREATIVITY</div>
+          <div class="art-caption">A little curiosity.<br>A lot of intention.</div>
+          <span class="art-star">✳</span>
         </div>
-        <div class="about-row">
-          <div
-            class="about-content"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <p class="about-descr">
-              I’m a passionate marketing enthusiast with hands-on experience in content creation, 
-              scriptwriting, video production, and social media planning. 
-              I enjoy turning complex ideas into engaging, 
-              easy-to-understand content—especially through short-form videos and creative storytelling. 
-              I’m a fresh graduate from Cairo University, Faculty of Commerce (English Section),
-               with a Very Good with Honors. I'm always exploring new ideas and tools to create meaningful content and connect with audiences.
-            </p>
-            <div class="about-download-btn">
-              <a href="Sama Gamal Mohamed-Resume.pdf" class="btn btn-white">Download CV</a>
-            </div>
-          </div>
+        <a class="scroll-cue" href="#impact"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="impact-section section-wrap" id="impact">
+        <div class="impact-heading"><h2>Good ideas are<br>better <em>when they work.</em></h2><p>A snapshot of results delivered through multi-channel marketing, content and campaign execution.</p></div>
+        <div class="stats-grid">
+          <article class="stat-card stat-coral"><strong data-count="25" data-suffix="K+">25K+</strong><p>Leads generated</p><small>Multi-channel campaigns · Faiera</small></article>
+          <article class="stat-card stat-lilac"><strong data-count="1.2" data-suffix="M">1.2M</strong><p>Video views</p><small>Campaign performance · Faiera</small></article>
+          <article class="stat-card stat-yellow"><strong data-count="671" data-suffix="K">671K</strong><p>Audience reach</p><small>Campaign performance · Faiera</small></article>
+          <article class="stat-card stat-mint"><strong data-count="23" data-suffix="K">23K</strong><p>Link clicks</p><small>Campaign performance · Faiera</small></article>
         </div>
-        <div class="services-row">
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="50"
-          >
-            <img class="service-card-img" src="img/services/01.svg" alt="" />
-            <h3 class="service-card-title">Strategy & Research</h3>
-            <p>
-              I conducted market research and competitor analysis to support strategic decisions and internal projects. 
-              Created business briefs, helped define brand identity, 
-              and proposed marketing strategies that aligned with market insights and business goals.
-            </p>
-            <!-- PPTX Link -->
-            <div class="service-card-row">
-              <a href="marketing_strategy/Social Media Agency Pitch Deck By Slidesgo.pptx" target="_blank" class="btn btn-white" style="margin-left:12px;">
-                View Example
-              </a>
-            </div>
-          </div>
+      </section>
 
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <img class="service-card-img" src="img/services/03.svg" alt="" />
-            <h3 class="service-card-title">Content Creation</h3>
-            <p>
-              I developed and wrote over 10 creative scripts for reels, interviews, and ads, 
-              turning technical topics into clear and engaging content. 
-              Also created content calendars and planned social media strategies to ensure consistent and goal-driven messaging.
-            </p>
-            <div class="service-card-row">
-              <a href="#scripts" class="btn btn-white" style="margin-left:12px;">
-                View Example
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img class="service-card-img" src="img/services/video.svg" alt="" />
-            <h3 class="service-card-title">Video Production</h3>
-            <p>
-              I handled the full video production process—from preparing the shoot environment to filming and editing. 
-              Produced over 9 videos, including tech explainers and intern interviews, 
-              bringing creative ideas to life with strong visuals and storytelling.
-            </p>
-            <div class="service-card-row">
-              <a href="#projects" class="btn btn-white" style="margin-left:12px;">
-                View Example
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container container-lg">
-        <div class="projects-title">
-          <h2 class="title">Videos</h2>
-        </div>
-
-        <div class="projects-row">
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="1000"
-          >
-            <a href="https://youtube.com/shorts/Fs5uVhaxFNk" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085511472?h=fe588cbdf2&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                  style="position:absolute; pointer-events:none;"
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Nestle's long-term strategy</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <a href="https://www.youtube.com/shorts/gN5YSuy39PY" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085510896?h=f7c68c5163&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                  style="position:absolute; pointer-events:none;"
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Cybersecurity</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="600"
-            data-aos-duration="1000"
-          >
-            <a href="https://youtu.be/2dpO10c_g6w" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085511000?h=ef6e2229a7&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                  style="position:absolute; pointer-events:none;"
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Internship Experience</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="900"
-            data-aos-duration="1000"
-          >
-            <a href="https://youtu.be/FfiFyurbpbA" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085511250?h=736da98b6e&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                  style="position:absolute; pointer-events:none;"
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Internship Experience</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="1200"
-            data-aos-duration="1000"
-          >
-            <a href="https://youtube.com/shorts/P1EInkAH_qQ?si=N63xqeCm09kpqWVX" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085510750?h=f3c641ffcf&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">AI Reel 1</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="1500"
-            data-aos-duration="1000"
-          >
-            <a href="https://youtube.com/shorts/nO2UNCmF4WE" target="_blank" style="display:block;">
-              <div class="project-media-wrapper" style="position:relative; background:url('img/video.png') center center / cover no-repeat;">
-                <iframe
-                  src="https://player.vimeo.com/video/1085511572?h=bb4841b94c&autoplay=1&muted=1&background=1"
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">AI Reel 2</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="scripts" class="scripts">
-      <div class="container">
-        <div class="scripts-title">
-          <h2 class="title">Scripts</h2>
-        </div>
-        <div class="scripts-list">
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">AI AD</h3>
-            <a href="scripts/AI [Artificial Intelligence] Edited.pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">Script Example 1</h3>
-            <a href="scripts/First script + visuals.pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">Script Example 2</h3>
-            <a href="scripts/script 2 .pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">Script Example 3</h3>
-            <a href="scripts/Script 3.pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">What is AI?</h3>
-            <a href="scripts/What is AI.pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-          <div class="script-card">
-            <img src="img/services/pdf.svg" alt="Script PDF" class="script-card-img" />
-            <h3 class="script-card-title">AI History</h3>
-            <a href="scripts/AI history.pdf" target="_blank" class="btn btn-white">View PDF</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-title">
-          <h2 class="title">Contact</h2>
-        </div>
-        <div class="contact-content">
-          <p>
-            Tell me about your project.
-            <br />
-            Let's talk and work together!
-          </p>
-        </div>
-
-        <form 
-          class="contactForm" 
-          data-aos="zoom-in" 
-          data-aos-duration="1000"   
-          action="https://formspree.io/f/mnndwpyj"  
-          method="POST"
-        >
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
-
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <div
-            class="contact-button"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          >
-            <button class="btn btn-red" name="submit" type="submit">
-              Send Message
+      <section class="work-section section-wrap" id="work">
+        <div class="section-heading-row"><h2>Work that<br><em>moves people.</em></h2><p>From growth campaigns to creator partnerships and content production, here's a selection of the work and thinking behind it.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-feature" data-category="growth" data-project="faiera">
+            <button class="project-open" type="button" aria-label="View Faiera growth campaign case study">
+              <div class="project-visual visual-faiera"><span class="visual-label">GROWTH CAMPAIGN / 2025</span><span class="visual-big">25K<span>+</span></span><span class="visual-sub">LEADS, BUILT ON INSIGHT.</span><span class="visual-shape shape-a"></span><span class="visual-shape shape-b"></span></div>
+              <div class="project-info"><div><span class="project-type">PERFORMANCE · STRATEGY</span><h3>Faiera — Growth campaign</h3><p>Building a marketing function and turning audience insight into measurable acquisition.</p></div><span class="project-arrow">↗</span></div>
             </button>
-          </div>
-        </form>
-        <div class="response"></div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-row">
-          <div class="social-links-row footer-social">
-
-            <a href="https://www.linkedin.com/in/sama-gamal-a5a132203/">
-              <img
-                src="img/social_icons/linkedin.svg"
-                alt="Link to linkedin profile"
-              />
-            </a>
-
-          </div>
-            <div class="footer-copyright">
-              <p>
-                <a href="https://github.com/engRana404" target="_blank" rel="noopener">
-                  &copy; Copyright Rana Gamal 2025
-                </a>
-              </p>
-            </div>
+          </article>
+          <article class="project-card" data-category="influencer" data-project="noon">
+            <button class="project-open" type="button" aria-label="View noon influencer marketing case study">
+              <div class="project-visual visual-noon"><span class="visual-label">INFLUENCER MARKETING / 2025—NOW</span><div class="noon-mark">noon<span>.</span></div><div class="noon-orb"></div><span class="visual-sub">CREATORS. CULTURE. CONNECTION.</span></div>
+              <div class="project-info"><div><span class="project-type">GCC · CREATOR PARTNERSHIPS</span><h3>noon — Influencer campaigns</h3><p>Campaign planning and creator coordination across UAE and KSA.</p></div><span class="project-arrow">↗</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-category="content" data-project="gbg">
+            <button class="project-open" type="button" aria-label="View Global Brands Group content project case study">
+              <div class="project-visual visual-gbg"><span class="visual-label">CONTENT STUDIO / 2024—25</span><span class="gbg-type">MAKE<br>IT<br><i>MATTER.</i></span><span class="visual-sub">STORIES MADE TO BE WATCHED.</span></div>
+              <div class="project-info"><div><span class="project-type">SCRIPTWRITING · VIDEO</span><h3>GBG — Content &amp; storytelling</h3><p>Turning technical topics into accessible scripts, storyboards and videos.</p></div><span class="project-arrow">↗</span></div>
+            </button>
+          </article>
+          <article class="project-card" data-category="growth" data-project="schneider">
+            <button class="project-open" type="button" aria-label="View Schneider Electric market entry project">
+              <div class="project-visual visual-schneider"><span class="visual-label">MARKET RESEARCH / 2023</span><span class="schneider-type">THE<br>NEXT<br><i>CHARGE.</i></span><span class="schneider-ring"></span><span class="visual-sub">EXPLORING THE EV LANDSCAPE.</span></div>
+              <div class="project-info"><div><span class="project-type">RESEARCH · MARKET ENTRY</span><h3>Schneider Electric — EV strategy</h3><p>A market-entry strategy presentation developed during a marketing and sales program.</p></div><span class="project-arrow">↗</span></div>
+            </button>
+          </article>
         </div>
-      </div>
-    </footer>
+        <p class="work-note">Selected project summaries are based on professional experience. Detailed campaign assets and additional work samples can be shared on request.</p>
+      </section>
 
-    <div id="goToTop" class="goToTop">
-      <a href="#home">
-        <img src="img/icons/arrow_up.svg" alt="Back to top"
-      /></a>
-    </div>
+      <section class="reel-section section-wrap" id="reels">
+        <div class="section-heading-row"><h2>Ideas, in<br><em>motion.</em></h2><p>A selection of short-form videos, explainers and creative content produced during the GBG experience.</p></div>
+        <div class="reel-grid">
+          <a class="reel-card reel-one" href="https://www.youtube.com/shorts/Fs5uVhaxFNk" target="_blank" rel="noopener"><span class="reel-number">01 / STRATEGY</span><span class="reel-play">▶</span><strong>Nestlé's long-term strategy</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+          <a class="reel-card reel-two" href="https://www.youtube.com/shorts/gN5YSuy39PY" target="_blank" rel="noopener"><span class="reel-number">02 / EXPLAINER</span><span class="reel-play">▶</span><strong>Cybersecurity</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+          <a class="reel-card reel-three" href="https://youtu.be/2dpO10c_g6w" target="_blank" rel="noopener"><span class="reel-number">03 / PEOPLE</span><span class="reel-play">▶</span><strong>Internship experience</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+          <a class="reel-card reel-four" href="https://youtu.be/FfiFyurbpbA" target="_blank" rel="noopener"><span class="reel-number">04 / PEOPLE</span><span class="reel-play">▶</span><strong>Internship experience</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+          <a class="reel-card reel-five" href="https://www.youtube.com/shorts/P1EInkAH_qQ" target="_blank" rel="noopener"><span class="reel-number">05 / AI</span><span class="reel-play">▶</span><strong>AI reel 01</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+          <a class="reel-card reel-six" href="https://www.youtube.com/shorts/nO2UNCmF4WE" target="_blank" rel="noopener"><span class="reel-number">06 / AI</span><span class="reel-play">▶</span><strong>AI reel 02</strong><span class="reel-watch">WATCH VIDEO ↗</span></a>
+        </div>
+      </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="module" src="js/main.js"></script>
-  </body>
+      <section class="about-section section-wrap" id="about">
+        <div class="about-layout"><div class="about-stamp">CURIOUS<br>BY NATURE<span>✳</span></div><div class="about-copy"><h2>Part strategist.<br>Part storyteller.<br><em>Always curious.</em></h2><p>I'm Sama, a Digital Marketing &amp; Growth Specialist with experience across influencer marketing, performance campaigns, content strategy and creative production. I enjoy connecting the dots between what audiences care about and what businesses want to achieve.</p><p>With a background in Commerce from Cairo University, I bring together research, creative thinking and performance analysis to make marketing more meaningful—and more effective.</p><a class="text-link" href="Sama%20Gamal%20Mohamed-Resume.pdf" target="_blank" rel="noopener">A little more about my experience <span>↗</span></a></div></div>
+      </section>
+
+      <section class="experience-section section-wrap" id="experience">
+        <div class="section-heading-row"><h2>Where I've<br><em>made moves.</em></h2><p>A growing path across e-commerce, education, technology and market research.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-date">OCT 2025 — PRESENT</span><div><h3>Influencer Marketing Executive <span>noon</span></h3><p>Developing and executing influencer campaigns across UAE and KSA, managing creator selection, briefing, communication, deliverables and performance reporting.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">MAY 2025 — SEP 2025</span><div><h3>Digital Marketing Specialist <span>Faiera</span></h3><p>Built the marketing function from scratch, planned multi-channel campaigns, managed a 140K EGP budget and delivered 25K+ leads.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">OCT 2024 — APR 2025</span><div><h3>Marketing Intern — Specialist Role <span>GBG</span></h3><p>Created scripts and storyboards, produced 9+ videos end-to-end and managed a content calendar for tech-focused content.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">JUL 2023 — AUG 2023</span><div><h3>Marketing &amp; Sales Trainee <span>Schneider Electric</span></h3><p>Completed marketing and sales training and presented an EV-sector market-entry strategy.</p></div></article>
+        </div>
+      </section>
+
+      <section class="scripts-section section-wrap" id="scripts">
+        <div class="scripts-layout"><div><h2>Every good video<br>starts with a <em>good script.</em></h2><p>Scriptwriting and storytelling samples from explainers, AI-focused content and creative concepts.</p></div><div class="script-list"><a class="script-row" href="scripts/AI%20%5BArtificial%20Intelligence%5D.pdf" target="_blank" rel="noopener"><span>01</span><strong>AI — Artificial Intelligence Ad</strong><small>VIEW SCRIPT ↗</small></a><a class="script-row" href="scripts/What%20is%20AI.pdf" target="_blank" rel="noopener"><span>02</span><strong>What is AI?</strong><small>VIEW SCRIPT ↗</small></a><a class="script-row" href="scripts/AI%20history.pdf" target="_blank" rel="noopener"><span>03</span><strong>AI History</strong><small>VIEW SCRIPT ↗</small></a><a class="script-row" href="scripts/Creative%20script%20samples.pdf" target="_blank" rel="noopener"><span>04</span><strong>Creative script samples</strong><small>VIEW SCRIPTS ↗</small></a><p class="script-hint">Want to read more? <a href="mailto:samagamal101@gmail.com?subject=Writing%20samples%20request">Request additional scripts ↗</a></p></div></div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact">
+        <div class="contact-panel"><div class="contact-copy"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make<br><em>good things</em><br>happen<span class="period">.</span></h2><p>Have a campaign, collaboration or opportunity in mind? I'd love to hear about it.</p><a class="button button-dark" href="mailto:samagamal101@gmail.com">Start a conversation <span>↗</span></a></div><div class="contact-details"><span>GET IN TOUCH</span><a href="mailto:samagamal101@gmail.com">samagamal101@gmail.com ↗</a><a href="tel:+201062288991">+20 106 228 8991 ↗</a><a href="https://www.linkedin.com/in/sama-gamal-a5a132203/" target="_blank" rel="noopener">LinkedIn ↗</a><div><br>Open to opportunities &amp; collaborations</div></div><span class="contact-spark">✳</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark" href="#home">SG<span>.</span></a><p>Made with intention by Sama Gamal.</p><a href="#home">BACK TO TOP ↑</a><small>© <span id="year"></span> SAMA GAMAL</small></footer>
+  </div>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close project details">×</button><div class="dialog-content"><p class="eyebrow" id="dialog-eyebrow"></p><h2 id="dialog-title"></h2><p id="dialog-summary"></p><div class="dialog-columns"><div><h3>Focus</h3><ul id="dialog-focus"></ul></div><div><h3>Highlights</h3><ul id="dialog-highlights"></ul></div></div><p class="dialog-note">This summary describes the scope of the work. Further campaign materials and detailed reporting can be shared where available.</p></div></dialog>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js" integrity="sha384-/Mm/FNRz5xZHO/GuuAUw93l4PLUyI1RfkXnlY65kdR+jBmgt/ih19KrCNqVI9gKS" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
 </html>
