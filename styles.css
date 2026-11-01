@@ -28,6 +28,7 @@ html[data-theme=dark] {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 0;
+  font-variant-emoji: text;
 }
 body {
   margin: 0;
