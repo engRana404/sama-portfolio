@@ -595,10 +595,11 @@ h1 {
 }
 .reel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
-  gap: 13px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
 }
 .reel-card {
+  width: 100%;
   min-width: 0;
   min-height: 220px;
   aspect-ratio: 1.35 / 1;
@@ -1124,6 +1125,10 @@ h1 {
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .reel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
   .about-layout {
     gap: 35px;
   }
@@ -1249,8 +1254,7 @@ h1 {
     font-size: 21px;
   }
   .reel-grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
-    gap: 12px;
+    gap: 14px;
   }
   .reel-card {
     min-height: 210px;
@@ -1361,6 +1365,11 @@ h1 {
   .dialog-columns {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+}
+@media(max-width:520px) {
+  .reel-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 @media(prefers-reduced-motion:reduce) {
