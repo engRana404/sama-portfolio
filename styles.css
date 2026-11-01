@@ -28,7 +28,6 @@ html[data-theme=dark] {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 0;
-  font-variant-emoji: text;
 }
 body {
   margin: 0;
@@ -44,6 +43,23 @@ a {
 }
 button {
   font: inherit;
+}
+.arrow-icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  flex: none;
+  vertical-align: baseline;
+  line-height: inherit;
+}
+.arrow-icon::before {
+  content: "↗︎";
+}
+.arrow-down-right::before {
+  content: "↘︎";
+}
+.arrow-up::before {
+  content: "↑︎";
 }
 .site-shell {
   overflow: clip;
